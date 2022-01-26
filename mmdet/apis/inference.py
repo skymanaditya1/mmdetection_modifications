@@ -212,6 +212,7 @@ async def async_inference_detector(model, imgs):
 def show_result_pyplot(model,
                        img,
                        result,
+                       out_file=None,
                        score_thr=0.3,
                        title='result',
                        wait_time=0):
@@ -232,6 +233,7 @@ def show_result_pyplot(model,
     model.show_result(
         img,
         result,
+        out_file=out_file,
         score_thr=score_thr,
         show=True,
         wait_time=wait_time,
